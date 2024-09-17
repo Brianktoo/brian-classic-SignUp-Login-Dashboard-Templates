@@ -7,7 +7,6 @@ import Divider from "@mui/material/Divider";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
-import Link from "@mui/material/Link";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
@@ -17,6 +16,7 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import getSignUpTheme from "./theme/getSignUpTheme";
 import { GoogleIcon, FacebookIcon } from "../Components/CustomIcon";
 import TemplateFrame from "../Components/TemplateFrame";
+import { Link } from "react-router-dom";
 
 const Card = styled(MuiCard)(({ theme }) => ({
   display: "flex",
@@ -227,13 +227,14 @@ export default function SignUp() {
                 <Typography sx={{ textAlign: "center" }}>
                   Already have an account?{" "}
                   <span>
-                    <Link
+                    {/* <Link
                       href="/material-ui/getting-started/templates/sign-in/"
                       variant="body2"
                       sx={{ alignSelf: "center" }}
                     >
                       Sign in
-                    </Link>
+                    </Link> */}
+                    <Link to={`/sign-in`}>Sign In</Link>
                   </span>
                 </Typography>
               </Box>

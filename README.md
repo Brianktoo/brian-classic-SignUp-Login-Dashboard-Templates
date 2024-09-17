@@ -4,28 +4,23 @@ This is a simple responsiive project that contains sigup, login and dashboard pa
 
 # pages
 
-1.  signup- allows registration of new user
+1. signup- allows registration of new user
 
-## Installation
+# Installation
 
 1. Clone the repository:
-   ```bash
-   git clone <URL>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd project-name
-   ```
+
+2. git clone <URL>
+   Navigate to the project directory:
+
+cd project-name
+
 3. Install the necessary dependencies:
 
-   ```bash
-   npm install
-   ```
+npm install
 
-   ## Usage
+# Usage
 
-   To start the project, run the following command:
+To start the project, run the following command:
 
-```bash
 npm run dev
-```
